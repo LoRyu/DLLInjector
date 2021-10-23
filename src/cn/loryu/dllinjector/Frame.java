@@ -125,7 +125,7 @@ public class Frame extends JFrame {
                 FileNameExtensionFilter filter = new FileNameExtensionFilter(
                         "DLL File(*.dll)", "dll");
                 fcDlg.setFileFilter(filter);
-                int returnVal = fcDlg.showOpenDialog(null);
+                int returnVal = fcDlg.showOpenDialog(Frame.instance);
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
                     dllPath = fcDlg.getSelectedFile().getPath();
                     lastPath = dllPath;
