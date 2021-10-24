@@ -54,7 +54,7 @@ public class ProcessSelector extends JFrame {
                         Frame.instance.processInfo.setText("Process:");
                         Frame.instance.process = null;
                     }else {
-                        Frame.instance.processInfo.setText("Process:   Name: " + p.getName() + "PID: " + p.getId());
+                        Frame.instance.processInfo.setText("Process: " + p.getName() + "PID: " + p.getId());
                         Frame.instance.process = p;
                     }
                     p.setSelected(!p.isSelected());
